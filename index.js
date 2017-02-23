@@ -7,23 +7,23 @@ app.get('/', function(request, response) {
   response.sendFile(__dirname + '/index.html')
 });
 
-app.get('/classes', function(request, response) {
-  fs.readFile('classes.json', 'utf8', function(err, data) {
-    var classes = JSON.parse(data);
-    response.locals = { classes: classes }
-    response.render('classes.ejs');
+app.get('/courses', function(request, response) {
+  fs.readFile('courses.json', 'utf8', function(err, data) {
+    var courses = JSON.parse(data);
+    response.locals = { courses: courses }
+    response.render('courses.ejs');
   });
 });
 
-app.get('/classes/:id', function(request, response) {
-  fs.readFile('classes.json', 'utf8', function(err, data) {
-    var classesParsed = JSON.parse(data);
-    var class = classesParsed.filter( function(p) {
+app.get('/courses/:id', function(request, response) {
+  fs.readFile('courses.json', 'utf8', function(err, data) {
+    var coursesParsed = JSON.parse(data);
+    var course = coursesParsed.filter( function(p) {
       return p.id === parseInt(request.params.id);
     })[0];
 
-    response.locals = { class: class };
-    response.render('class.ejs');
+    response.locals = { course: course };
+    response.render('course.ejs');
   });
 });
 
