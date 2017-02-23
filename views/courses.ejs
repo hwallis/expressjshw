@@ -1,21 +1,20 @@
 <a href = '/'>Back</a>
-<h1>Courses Offered</h1>
-<table>
-  <thead>
-    <th>Show</th>
-    <th>Name</th>
-    <th>Days</th>
-    <th>Time</th>
-  </thead>
-  <tbody>
-    <% courses.forEach( function(course) { %>
-      <% var url = '/courses/' + course.id %>
-      <tr>
-        <td><a href = <%= url %>> Show Course Info </a></td>
-        <td> <%= course.name %></td>
-        <td> <%= course.days %></td>
-        <td> <%= course.time %></td>
-      </tr>
-      <%}); %>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+<div class="container cyan lighten-5">
+  <h1>Courses Offered</h1>
+  <table>
+    <thead>
+      <th>Info</th>
+      <th>Course Name</th>
+    </thead>
+    <tbody>
+      <% courses.forEach( function(course) { %>
+        <% var url = '/courses/' + course.id %>
+        <tr>
+          <td><a href = <%= url %>> Info </a></td>
+          <td> <%= course.name %></td>
+        </tr>
+        <%}); %>
     </tbody>
   </table>
+</div>

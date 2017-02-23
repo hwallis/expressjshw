@@ -1,8 +1,12 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 <a href = '/courses'>Back</a>
-<% if(course) { %>
-  <h1> <%= course.name %> </h1>
-  <h3> <%= course.days %> </h3>
-  <h3> <%= course.time %> </h3>
-<% } else { %>
-  <h1>Course Not Found</h1>
-<% } %>
+<div class="container cyan lighten-5">
+  <% if(course) { %>
+    <h1> <%= course.name %> </h1>
+    <hr>
+    <h3> <%= course.days %> </h3>
+    <h3> <%= course.time %> </h3>
+  <% } else { %>
+    <h1>Course Not Found</h1>
+  <% } %>
+</div>

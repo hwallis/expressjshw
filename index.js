@@ -2,6 +2,7 @@ var express = require('express');
 var fs = require('fs');
 var ejs = require('ejs');
 var app = express();
+var materialize = require('materialize.min.css');
 
 app.get('/', function(request, response) {
   response.sendFile(__dirname + '/index.html')
