@@ -1,36 +1,36 @@
 [
   {
-    "id": "101",
+    "id": 101,
     "name": "Learning Git",
     "days": "Monday & Wednesday",
     "time": "8:00am - 9:30am"
   },
   {
-    "id": "110",
+    "id": 110,
     "name": "The Command Line",
     "days": "Tuesday & Thursday",
     "time": "10:00am - 10:30am"
   },
  {
-    "id": "200",
+    "id": 200,
     "name": "JavaScript Drills",
     "days": "Friday",
     "time": "8:00am - 9:30am"
   },
   {
-    "id": "210",
+    "id": 210,
     "name": "Node Module for Dummies",
     "days": "Tuesday & Thursday",
     "time": "11:00am - 11:30am"
   },
   {
-    "id": "220",
+    "id": 220,
     "name": "Creating ExpressJS Apps",
     "days": "Monday & Wednesday",
     "time": "12:00pm - 1:30pm"
   },
   {
-    "id": "250",
+    "id": 250,
     "name": "Rules for React",
     "days": "Tuesday & Thursday",
     "time": "12:00pm - 1:30pm"
